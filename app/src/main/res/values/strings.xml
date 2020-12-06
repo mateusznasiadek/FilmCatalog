@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Katalog filmów</string>
+
+    <string name="date">Rok premiery: <b>%s</b></string>
+    <string name="length">Długość filmu: <b>%s</b></string>
+    <string name="cast"><b>Obsada:\n</b>%s</string>
+
+    <string name="drama">Dramat</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="melodrama">Melodramat</string>
+    <string name="comedydrama">Komediodramat</string>
+    <string name="favourite">Ulubione</string>
+    <string name="remove_filter">Usuń filtr</string>
+
+</resources>

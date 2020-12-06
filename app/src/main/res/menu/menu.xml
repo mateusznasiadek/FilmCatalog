@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drama_filter"
+        android:title="@string/drama" />
+    <item
+        android:id="@+id/fantasy_filter"
+        android:title="@string/fantasy" />
+    <item
+        android:id="@+id/melodrama_filter"
+        android:title="@string/melodrama" />
+    <item
+        android:id="@+id/comedydrama_filter"
+        android:title="@string/comedydrama" />
+    <item
+        android:id="@+id/favourite_filter"
+        android:title="@string/favourite" />
+    <item
+        android:id="@+id/no_filter"
+        android:title="@string/remove_filter" />
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="detailsViewModel"
+            type="com.example.catalogueapp.screens.details.DetailsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.details.detailsFragments.DescriptionFragment">
+
+
+        <TextView
+            android:id="@+id/title_descTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@{detailsViewModel.film.title}"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            tools:text="Tamte dni, tamte noce" />
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@{@string/date(detailsViewModel.film.date)}"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_descTV"
+            tools:text="Rok premiery: 2017" />
+
+        <TextView
+            android:id="@+id/lengthTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@{@string/length(detailsViewModel.film.length)}"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateTV"
+            tools:text="Długość filmu: 2 godz. 12 min." />
+
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@{detailsViewModel.film.desc}"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lengthTV"
+            tools:text="Północne Włochy, lato 1983 roku. Elio Perlman, błyskotliwy siedemnastolatek o amerykańsko-włoskim pochodzeniu, spędza wakacje w XVII-wiecznej willi, komponując i grając muzykę klasyczną, czytając i flirtując ze swą przyjaciółką – Marzią. Cieszy go każda chwila spędzona w willi, zwłaszcza że za kompana ma swego ojca, szanowanego profesora specjalizującego się w greko-romańskiej kulturze, oraz matkę Annellę, tłumaczkę, która uczy chłopaka rozkoszować się kulturą i przyrodą Włoch. Obycie i wykształcenie oraz talent Elia sprawiają wrażenie, że mamy do czynienia z dorosłym, w pełni ukształtowanym mężczyzną, a jednak wielu rzeczy musi się jeszcze nauczyć – zwłaszcza w obcej mu dotąd dziedzinie – miłości. Pewnego dnia do willi przybywa Oliver, młody amerykański stypendysta, pracujący z ojcem Elia nad swym doktoratem. W porażająco pięknych krajobrazach spalonej słońcem Italii Elio i Oliver odkrywają odurzającą siłę wzajemnego przyciągania. To lato zapamiętają na zawsze." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
